@@ -7,7 +7,7 @@ const Footer = () => {
              <div className='mt-11'>
           <footer className="footer bg-base-200 text-base-content p-10">
   <aside>
-    <Image src={LOGO} width={100} alt="" />
+    <Image src={LOGO} width={100} height={100} alt="" /> 
     <p>
     DNK Ltd.
       <br />
