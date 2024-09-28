@@ -1,5 +1,5 @@
 'use client'
-import Tostify from '@/components/Tostify/Tostify';
+import Tostify from '@/Components/Tostify/Tostify';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { stateFulSetUser } from '@/util/getUser/stateFulSetUser';

@@ -1,7 +1,7 @@
 import localFont from "next/font/local";
 import "./globals.css";
-import NavBar from "@/components/NavBar/NavBar";
-import Footer from "@/components/Footer/Footer";
+import NavBar from "@/Components/NavBar/NavBar";
+import Footer from "@/Components/Footer/Footer";
 import Providers from "@/lib/Redux/Providers/Provider";
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
