@@ -1,4 +1,4 @@
-import TermsModal from '@/Components/Ui/Modal/Modal';
+import TermsModal from '@/components/Ui/Modal/Modal';
 import { seenProduct } from '@/util/Fetching/Featching';
 import { decodeToken } from '@/util/serverGetUser';
 import dynamic from 'next/dynamic';
@@ -8,7 +8,7 @@ import React from 'react';
 const page = async({params}) => {
     const product= await seenProduct(params.id)
     const user= decodeToken()
-    const OrderForm = dynamic(() => import('@/Components/Ui/OrderForm/OrderForm'), { ssr: false })
+    const OrderForm = dynamic(() => import('@/components/Ui/OrderForm/OrderForm'), { ssr: false })
     return (
 <div>
   {

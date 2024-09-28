@@ -1,10 +1,10 @@
-import Product from '@/Components/Ui/Product/Product';
+import Product from '@/components/Ui/Product/Product';
 import React, { Suspense, lazy } from 'react';
 export const dynamic = 'force-dynamic'
-const Banner = lazy(() => import('@/Components/Ui/Banner/Banner'));
-const Logo = lazy(() => import('@/Components/Ui/Logo/Logo'));
-const MidelBanner = lazy(() => import('@/Components/Ui/MidelBanner/MidelBanner'));
-const ShowUp = lazy(() => import('@/Components/Ui/Show Up/ShowUp'));
+const Banner = lazy(() => import('@/components/Ui/Banner/Banner'));
+const Logo = lazy(() => import('@/components/Ui/Logo/Logo'));
+const MidelBanner = lazy(() => import('@/components/Ui/MidelBanner/MidelBanner'));
+const ShowUp = lazy(() => import('@/components/Ui/Show Up/ShowUp'));
 
 export default function Home() {
   return (

@@ -1,4 +1,4 @@
-import NotFoundPage from '@/Components/Ui/NotFound/NotFpund';
+import NotFoundPage from '@/components/Ui/NotFound/NotFpund';
 import { searchProducts } from '@/util/Fetching/Featching';
 import Image from 'next/image';
 import Link from 'next/link';
