@@ -1,5 +1,4 @@
 'use client'
-import error from '@/app/error';
 import { useDeleteorderMutation, useGetOrderQuery } from '@/lib/Redux/Apis/orderApi/orderApi';
 import { stateFulSetUser } from '@/util/getUser/stateFulSetUser';
 import Image from 'next/image';
@@ -12,14 +11,14 @@ const page = () => {
   if (isLoading) {
     return (
       <div>
-      <div className="flex items-center justify-center h-screen">
-<div className="relative">
-    <div className="h-24 w-24 rounded-full border-t-8 border-b-8 border-gray-200"></div>
-    <div className="absolute top-0 left-0 h-24 w-24 rounded-full border-t-8 border-b-8 border-blue-500 animate-spin">
-    </div>
-</div>
-</div>
-    </div>
+        <div className="flex items-center justify-center h-screen">
+          <div className="relative">
+            <div className="h-24 w-24 rounded-full border-t-8 border-b-8 border-gray-200"></div>
+            <div className="absolute top-0 left-0 h-24 w-24 rounded-full border-t-8 border-b-8 border-blue-500 animate-spin">
+            </div>
+          </div>
+        </div>
+      </div>
     )
   }
   if (isError) {
@@ -85,7 +84,7 @@ const page = () => {
                   <td>{order.status}</td>
                   <td>{order.quantity}x</td>
                   <th>
-                    <button onClick={() => deleteOrder(order._id)} disabled={order.status==='Accepted'} className="btn text-white btn-xs btn-error">Delete</button>
+                    <button onClick={() => deleteOrder(order._id)} disabled={order.status === 'Accepted'} className="btn text-white btn-xs btn-error">Delete</button>
                   </th>
                 </tr>
               ))
